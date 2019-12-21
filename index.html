@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/00b597af37.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Startpage</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li class="trigger active" data-target="links">Links</li>
+          <li class="trigger" data-target="todo">Todo</li>
+          <li class="trigger" data-target="weather">Weather</li>
+        </ul>
+        <div class="clock"></div>
+      </div>
+      <div class="main">
+        <div id="links" class="links content active">
+          <div class="links-wrapper">
+            <ul class="links-list">
+              <li>
+                <h3>Code</h3>
+                <a
+                  href="https://github.com/HowProgrammingWorks/Index/blob/master/Courses/Fundamentals.md"
+                >
+                  HowProgrammingWorks
+                </a>
+                <a href="https://www.codewars.com/kata/latest/my-languages">
+                  Codewars
+                </a>
+                <a href="https://github.com/">Github</a>
+              </li>
+              <li>
+                <h3>Social</h3>
+                <a href="https://boards.4channel.org/g/catalog">/g/</a>
+                <a href="https://www.reddit.com/r/webdev/">r/webdev</a>
+                <a href="https://dev.to/">dev.to</a>
+              </li>
+              <li>
+                <h3>Fun</h3>
+                <a href="https://www.youtube.com/">Youtube</a>
+                <a href=""></a>
+                <a href=""></a>
+              </li>
+            </ul>
+            <div class="searchbar-wrapper">
+              <form
+                class="search"
+                action="https://duckduckgo.com/"
+                method="get"
+              >
+                <input
+                  class="search"
+                  type="text"
+                  name="q"
+                  placeholder=">search"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="todo" class="todo content">
+          <div class="todo-wrapper">
+            <ul class="todo-list"></ul>
+            <form class="add-todo">
+              <input
+                class="add-todo"
+                type="text"
+                name="add"
+                placeholder=">add new todo"
+              />
+            </form>
+          </div>
+        </div>
+        <div id="weather" class="weather content">
+          <div class="weather-wrapper">
+            <div class="weather-today">
+              <h2>Today</h2>
+              <h2 class="temperature-today"></h2>
+              <p class="summary-daily"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
